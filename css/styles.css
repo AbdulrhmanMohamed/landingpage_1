@@ -1,0 +1,402 @@
+/* Gloabal Styling  */
+
+*,
+body,
+html {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    line-height: 1.1;
+}
+
+:root {
+    --text-light: #49433A;
+    --text-bold: #2F281E;
+    --text-white: #fff;
+    --bg-orange: #FF9900;
+    --text-orange: #FF9900;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 54px;
+    color: var(--text-bold);
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 54px;
+    color: var(--text-bold);
+    margin: 20px 0;
+}
+
+h3 {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 26px;
+    margin: 15px 0;
+}
+
+p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    /* or 156% */
+    color: var(--text-light);
+}
+
+button {
+    cursor: pointer;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn {
+    border: 0px;
+    background: transparent;
+    padding: 10px;
+}
+
+
+/* Start NavBar */
+
+.nav-bar {
+    padding: 25px 0;
+    margin: 20px 0px 0px;
+}
+
+.nav-bar {
+    display: flex;
+    align-items: center;
+}
+
+.nav-bar .logo {
+    width: 40%;
+}
+
+.nav-bar .logo img {
+    width: 192px;
+}
+
+.nav-bar nav {
+    margin-right: 50px;
+}
+
+.nav-bar nav a {
+    margin-right: 40px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 28px;
+    color: var(--text-light);
+}
+
+.nav-bar .sign-in,
+.nav-bar .sign-up {
+    padding: 12px 25px;
+    border-radius: 4px;
+}
+
+.nav-bar .sign-in {
+    margin-right: 15px;
+    border: 1px solid #BCD0E5;
+    color: #173A56;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    ;
+}
+
+.nav-bar .sign-up {
+    background-color: var(--bg-orange);
+    color: var(--text-white);
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.oval-down {
+    background: url('../images/oval-down.png') no-repeat center/cover;
+    height: 670px;
+}
+
+.design p {
+    margin: 30px 0 35px 0;
+    width: 460px;
+}
+
+.common-section {
+    display: flex;
+    align-items: center;
+}
+
+.design .btn,
+.super-hero .super-hero-content .btn,
+.footer-wrapper .input-group .btn {
+    background-color: var(--bg-orange);
+    color: var(--text-white);
+    padding: 15px 40px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    border-radius: 4px;
+}
+
+.design .fas,
+a {
+    color: var(--text-orange);
+}
+
+.design .fas {
+    margin-left: 30px;
+}
+
+.design a {
+    text-decoration: underline;
+    margin-left: 10px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+
+/* Start Design-professional */
+
+.space-top {
+    margin-top: 120px;
+}
+
+.professional p,
+.marketer p {
+    max-width: 490px;
+}
+
+.professional-image,
+.marketer-image {
+    max-width: 520px;
+    margin-left: auto;
+}
+
+
+/* Start the manager section */
+
+.manager .manager-content {
+    margin-left: 100px;
+}
+
+.manager-content .checked-item {
+    display: flex;
+    align-items: center;
+    margin: 38px 0px 30px 0px;
+}
+
+.manager-content p:nth-of-type(2) {
+    max-width: 480px;
+}
+
+.manager-content .checked-item .check-mark {
+    width: 35px;
+    height: 35px;
+    position: relative;
+    border-radius: 14px;
+    background: var(--bg-orange);
+}
+
+.checked-item p {
+    margin-left: 40px;
+    max-width: 365px;
+}
+
+.checked-item .check-mark i {
+    color: var(--text-white);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    align-self: center;
+}
+
+
+/* Start Super hero Section */
+
+.super-hero {
+    margin-top: 160px;
+    background-image: url('../images/Avator.png'), url('../images/oval-up.png');
+    background-repeat: no-repeat, no-repeat;
+    background-size: 1145px, cover;
+    height: 1120px;
+    background-position: center, center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.super-hero .super-hero-content {
+    text-align: center;
+    padding-bottom: 100px;
+}
+
+.super-hero .super-hero-content p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    color: #173A56;
+    width: 540px;
+    margin: auto;
+}
+
+.super-hero .super-hero-content button {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--text-white);
+    margin-top: 40px;
+}
+
+
+/* Start Marketing Strategy */
+
+.strategy-wrapper {
+    display: flex;
+    margin-top: 50px;
+    justify-content: space-between;
+}
+
+.strategy {
+    max-width: 415px;
+}
+
+.strategy:nth-child(2) {
+    margin: 0 20px;
+}
+
+.strategy p {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 34px;
+    color: var(--text-bold);
+}
+
+.strategy p:first-of-type {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    margin: 20px 0 10px 0;
+    color: var(--text-light);
+}
+
+.strategy img {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    width: 100%;
+}
+
+.marketing-strategy .bullets {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.marketing-strategy .bullets .bullet {
+    width: 10px;
+    height: 10px;
+    background: #ccc;
+    border-radius: 50%;
+}
+
+.marketing-strategy .bullets .bullet:nth-child(2) {
+    margin: 0 20px;
+}
+
+.marketing-strategy .bullets .bullet:hover {
+    background-color: var(--bg-orange);
+    cursor: pointer;
+}
+
+.divider {
+    width: 80%;
+    height: 2px;
+    background: rgba(188, 208, 229, 0.496913);
+    margin: 100px auto 0 auto;
+}
+
+
+/* Start Footer */
+
+.parent-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.parent-wrapper .footer-image {
+    align-self: start;
+    margin-top: 50px;
+}
+
+footer .footer-image {
+    margin-bottom: 30px;
+}
+
+footer .footer-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-left: 100px;
+    margin-top: 100px;
+}
+
+.footer-wrapper .nav-links,
+.footer-wrapper .instructions,
+.footer-wrapper .input-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-wrapper .instructions {
+    margin: 0 180px 0 100px;
+}
+
+.footer-wrapper a {
+    margin-bottom: 30px;
+    color: var(--text-light);
+}
+
+
+/* .footer-wrapper .input-group {
+    margin-left: auto;
+} */
+
+.footer-wrapper .input-group input {
+    padding: 12px 0;
+    outline: 0;
+    border: 1px solid #BCD0E5;
+    width: 325px;
+    height: 50px;
+    border-radius: 5px;
+}
+
+.footer-wrapper .input-group .btn {
+    padding: 8px 15px;
+    width: 130px;
+    margin-top: 30px;
+}
